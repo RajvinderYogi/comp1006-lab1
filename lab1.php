@@ -19,7 +19,7 @@
         $cmd->execute();
         $playingteams =$cmd->fetchAll();
         //display the data in a table
-        echo '<table class ="table table-striped table-hover"><tr><th>city</th><th>nickname</th><th>division</th></tr>';
+        echo '<table class ="table table-striped table-hover"><tr><th>City</th><th>Nickname</th><th>Division</th></tr>';
         //use for loop through the data
         foreach($playingteams AS $playingteam) {
         echo '<tr><td>' . $playingteam ['city'] . '</td>
